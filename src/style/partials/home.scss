@@ -1,0 +1,238 @@
+#shop {
+	padding-bottom: 165px;
+	margin-top: 100px;
+
+	.content {
+		&:after {
+			content: " ";
+			height: 0;
+			display: block;
+			clear: both;
+			visibility: hidden;
+		}
+	}
+
+	&-menu {
+		width: 265px;
+		float: left;
+
+		.shop-menu-header {
+			margin-top: 0;
+			position: relative;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			line-height: 25px;
+			font-size: 18px;
+			margin-right: 26px;
+			font-family: HelveticaLTStd-Bold;
+			color: $color_darkgray;
+
+			&:first-child::before {
+				display: inline-block;
+				content: " ";
+				position: absolute;
+				left: 11px;
+				top: -30px;
+				width: 38px;
+				height: 84px;
+				background-image: url('../img/home/menu-img-1.png');
+			}
+
+			&:nth-of-type(2)::after {
+				display: inline-block;
+				content: " ";
+				position: absolute;
+				left: 11px;
+				top: -30px;
+				width: 51px;
+				height: 91px;
+				background-image: url('../img/home/menu-img-2.png');
+			}
+		}
+
+		.shop-menu-list {
+			padding-left: 76px;
+			margin-bottom: 37px;
+			padding-right: 22px;
+
+			&-item {
+				list-style: none;
+				color: $color_darkgray;
+				line-height: 35px;
+				font-family: HelveticaNeueCyr-Light;
+				font-size: 15px;
+				text-align: left;
+				padding-left: 18px;
+				border-bottom: 1px dashed #c8c8c8;
+				cursor: pointer;
+				transition: all 0.3s ease;
+
+				&:hover, &:active, &:focus {
+					color: $btn_hover;
+				}
+			}
+		}
+
+	}
+
+	&-form {
+
+		.shop-form {
+
+			&-header {
+				font-family: HelveticaNeueCyr-Bold;
+				letter-spacing: 0.5px;
+				font-size: 15px;
+				color: $color_darkgray;
+				text-transform: uppercase;
+				text-align: left;
+				padding-left: 76px;
+			}
+
+			&-wrapper {
+				margin-top: 15px;
+				padding-left: 54px;
+			}
+
+			&-price {
+				width: 144px;
+				border: 1px dashed #c8c8c8;
+				text-align: right;
+				line-height: 28px;
+				font-size: 16px;
+				font-family: HelveticaNeueCyr-Light;
+				color: $color_darkgray;
+				letter-spacing: 0.5px;
+			}
+
+			&-label {
+				font-family: HelveticaNeueCyr-Bold;
+				letter-spacing: 0.5px;
+				color: $color_darkgray;
+				font-size: 12px;
+			}
+
+			&-range {
+				width: 171px;
+				height: 3px;
+				border-color: #c8c8c8;
+				background-color: #c8c8c8;
+				border-radius: 0px;
+				margin-left: 75px;
+				margin-top: 35px;
+
+				.ui-widget-header {
+					background-color: $color_darkgray;
+				}
+
+				.ui-slider-handle {
+					width: 3px;
+					background-color: #c8c8c8;
+					margin-left: 0px;
+					top: -8px;
+
+					&:focus, &:active {
+						outline: none;
+						border-color: #c8c8c8; 
+					}
+				}
+			}
+
+			&-btn {
+				background-color: #c8c8c8;
+				font-family: HelveticaNeueCyr-Bold;
+				font-size: 15px;
+				padding: 10px 40px;
+				border-width: 0;
+				color: white;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				margin-left: 78px;
+				margin-top: 40px;
+
+				&:hover, &:active, &:focus {
+					background-color: $btn_hover;
+				}
+			}
+		}
+	}
+
+
+	&-goods {
+		border-left: 1px solid #c8c8c8;
+		padding-left: 49px;
+		width: 765px;
+		float: left;
+
+		&-header {
+			margin: 0;
+			text-align: left;
+			font-family: HelveticaNeueCyr-Bold;
+			font-size: 30px;
+			letter-spacing: 2px;
+			line-height: 25px;
+			text-transform: uppercase;
+			color: #424242;
+			padding-bottom: 30px;
+			border-bottom: 2px solid #f95556;
+		}
+
+		&-list {
+			padding: 0;
+
+			.shop-goods-item {
+				display: inline-block;
+				margin-top: 35px;
+
+				// every middle item
+				&:nth-child(3n+2) {
+					margin-left: 3px;
+					margin-right: 3px;
+				}
+
+				img {
+					width: 250px;
+					height: 268px;
+				}
+
+				&-name {
+					font-family: HelveticaNeueCyr-Bold;
+					letter-spacing: 2px;
+					font-size: 16px;
+					text-transform: uppercase;
+					padding-top: 28px;
+					padding-bottom: 24px;
+				}
+
+				&-price {
+					font-family: HelveticaNeueCyr-Thin;
+					font-size: 22px;
+					color: #a2a2a2;
+				}
+
+				&-btn {
+					margin-top: 24px;
+					margin-bottom: 24px;
+					display: inline-block;
+					color: $color_darkgray;
+					padding: 10px 30px;
+					font-family: HelveticaNeueCyr-Bold;
+					border: 2px dashed $btn_hover;
+					transition: all 0.3s ease;
+
+					&:hover, &:active, &:focus {
+						background-color: $btn_hover;
+						color: white;
+					}
+				}
+
+				&-state {
+					font-family: HelveticaNeueCyr-Ligth;
+					color: #aaaaaa;
+					font-style: 15px;
+				}
+
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+$(document).ready(function() {
+	
+	console.log('test');
+	$(".shop-form-range").slider({
+		range: true,
+		min: 0,
+		max: 10000,
+		values: [ 2000, 4000 ]
+	});
+
+});

@@ -1,0 +1,8 @@
+#footer {
+  background-image: url("../img/footer/bg.jpg");
+  padding-bottom: 230px;
+  padding-top: 160px; }
+  #footer .footer-social-item, #footer .footer-menu-item, #footer-info, #footer-middle-wrapper {
+    display: inline-block; }
+  #footer .footer-menu-item {
+    font-family: HelveticaNeueCyr-Roman; }

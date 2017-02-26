@@ -1,0 +1,92 @@
+#footer {
+	background-image: url('../img/footer/bg.jpg');
+	background-size: cover;
+	padding-bottom: 230px;
+	padding-top: 160px;
+
+	&-middle-wrapper {
+		padding-left: 122px;
+		padding-right: 42px;
+	}
+
+	&-info {
+		padding-left: 70px;
+	}
+
+	&-social-item-1, &-social-item-2,
+	&-social-item-3, .footer-menu-item, 
+	&-info, &-middle-wrapper {
+		display: inline-block;
+	}
+
+	.footer-menu-item {
+		font-family: HelveticaNeueCyr-Roman;
+		font-size: 20px;
+		letter-spacing: 0.5px;
+		padding-left: 28px;
+		padding-right: 28px;
+		margin-bottom: 90px;
+
+		a {
+			color: $footer_text_color;
+			transition: all 0.3s ease;
+		}
+
+		&:hover a, &:active a, &:focus a {
+			color: $btn_hover;
+		}
+	}
+
+	&-social-item-1, &-social-item-2, &-social-item-3 {
+		width: 42px;
+		height: 42px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	&-social-item-1 {
+		background-image: url('../img/footer/vk.png');
+
+		&:hover, &:active, &:focus {
+			background-image: url('../img/footer/vk-hover.png');
+		}
+	}
+
+	&-social-item-2 {
+		background-image: url('../img/footer/tw.png');
+
+		&:hover, &:active, &:focus {
+			background-image: url('../img/footer/tw-hover.png');
+		}
+	}
+
+	&-social-item-3 {
+		background-image: url('../img/footer/fb.png');
+
+		&:hover, &:active, &:focus {
+			background-image: url('../img/footer/fb-hover.png');
+		}
+	}
+
+	.footer-info-item {
+		text-align: left;
+		list-style: none;
+		line-height: 42px;
+		font-size: 15px;
+		color: $footer_text_color;
+		font-family: HelveticaNeueCyr-Light;
+
+		&-bold {
+			font-family: HelveticaNeueCyr-Bold;
+			font-size: 17px;
+		}
+
+		&:last-child {
+			color: #6f7070;
+
+			&-bold {
+				font-size: 15px;
+			}
+		}
+	}
+}

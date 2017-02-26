@@ -1,0 +1,10 @@
+#header {
+  height: 674px;
+  background-image: url("../img/header/bg.jpg");
+  background-size: cover;
+  background-position: center; }
+  #header-menu {
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.14); }

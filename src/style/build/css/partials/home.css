@@ -1,0 +1,29 @@
+#shop-menu {
+  width: 265px; }
+  #shop-menu .shop-menu-header {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 18px;
+    font-family: HelveticaLTStd-Bold;
+    color: #424242; }
+    #shop-menu .shop-menu-header:first-child::before {
+      display: inline-block;
+      content: " ";
+      position: absolute;
+      left: 0;
+      width: 38px;
+      height: 84px;
+      background-image: url("../img/body/menu-img-1.png"); }
+  #shop-menu .shop-menu-list {
+    padding-left: 76px; }
+    #shop-menu .shop-menu-list-item {
+      list-style: none;
+      color: #424242;
+      line-height: 35px;
+      font-family: HelveticaNeueCyr-Light;
+      font-size: 15px;
+      text-align: left;
+      padding-left: 18px;
+      border-bottom: 1px dashed gray; }

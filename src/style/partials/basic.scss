@@ -1,0 +1,67 @@
+$footer_text_color: #060808;
+$header_text_color: #414141;
+$color_darkgray: #424242;
+$btn_hover: #2fbf71;
+
+body {
+	min-width: 1240px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+// common styles
+
+.content {
+	width: 1080px;
+	margin: auto;
+	text-align: center;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+// Fonts
+
+@font-face {
+    font-family: HelveticaNeueCyr-Bold;
+    src: url('../fonts/HelveticaNeueCyr-Bold.otf');
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr-Light;
+    src: url('../fonts/HelveticaNeueCyr-Light.otf');
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr-Roman;
+    src: url('../fonts/HelveticaNeueCyr-Roman.otf');
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr-Thin;
+    src: url('../fonts/HelveticaNeueCyr-Thin.otf');
+}
+
+@font-face {
+    font-family: HelveticaNeueLTStd-Lt;
+    src: url('../fonts/HelveticaNeueLTStd-Lt.otf');
+}
+
+@font-face {
+    font-family: HelveticaNeueLTStd-Bd;
+    src: url('../fonts/HelveticaNeueLTStd-Bd.otf');
+}
+
+@font-face {
+    font-family: HelveticaLTStd-Bold;
+    src: url('../fonts/HelveticaLTStd-Bold.otf');
+}
