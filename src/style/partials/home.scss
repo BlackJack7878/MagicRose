@@ -139,7 +139,7 @@
 			}
 
 			&-btn {
-				background-color: #c8c8c8;
+				background-color: $btn_hover;
 				font-family: HelveticaNeueCyr-Bold;
 				font-size: 15px;
 				padding: 10px 40px;
@@ -151,7 +151,7 @@
 				margin-top: 40px;
 
 				&:hover, &:active, &:focus {
-					background-color: $btn_hover;
+					background-color: #29d176;
 				}
 			}
 		}
