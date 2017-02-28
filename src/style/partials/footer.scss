@@ -1,8 +1,10 @@
 #footer {
-	background-image: url('../img/footer/bg.jpg');
+	background-image: url('../img/footer/bg.png');
 	background-size: cover;
 	padding-bottom: 230px;
 	padding-top: 160px;
+	z-index: 10;
+	position: relative;
 
 	&-middle-wrapper {
 		padding-left: 122px;

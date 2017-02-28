@@ -1,0 +1,79 @@
+#aboutUs {
+	padding-top: 60px;
+	padding-bottom: 150px;
+
+	.content {
+		width: 972px;
+		text-align: left;
+	}
+
+	&-header {
+		border-bottom: 2px solid #f95556;
+		margin-right: 63px;
+		padding-bottom: 22px;
+		text-transform: uppercase;
+		font-family: HelveticaNeueCyr-Bold;
+		color: $color_darkgray;
+		letter-spacing: 2px;
+		font-size: 30px;
+	}
+
+	&-wrapper {
+
+		img {
+			width: 565px;
+			height: 376px;
+			float: left;
+			border-right: 32px solid transparent;
+		}
+
+		&:after {
+			content: " ";
+			height: 0;
+			display: block;
+			clear: both;
+			visibility: hidden;
+		}
+	}
+
+	&-list {
+
+		color: $color_darkgray;
+
+		.aboutUs-list-item {
+			font-family: HelveticaNeueCyr-Bold;
+			list-style: decimal;
+			margin-left: 16px;
+			padding-right: 70px;
+		}
+
+		.aboutUs-text {
+			position: relative;
+			left: 18px; 
+		}
+	}
+
+	.aboutUs-info-header {
+		font-size: 30px;
+		letter-spacing: 5px;
+		color: $color_darkgray;
+		font-family: HelveticaNeueCyr-Light;
+		margin-top: 78px;
+		margin-bottom: 45px;
+		text-transform: uppercase;
+	}
+
+	.aboutUs-text {
+		font-family: HelveticaNeueCyr-Light;
+		font-size: 16px;
+		line-height: 28px;
+		color: #aaaaaa;
+	}
+
+}
+
+@media (min-height: 2590px) {
+  #aboutUs {
+  	padding-bottom: 800px;
+  }
+}

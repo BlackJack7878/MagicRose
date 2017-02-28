@@ -1,0 +1,11 @@
+#contacts {
+  padding-top: 60px;
+  padding-bottom: 150px; }
+  #contacts .content {
+    padding-left: 75px;
+    padding-right: 98px;
+    text-align: left; }
+  #contacts-header {
+    text-transform: uppercase;
+    border-bottom: 2px solid #f95556;
+    padding-bottom: 22px; }

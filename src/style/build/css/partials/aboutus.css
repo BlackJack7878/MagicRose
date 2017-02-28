@@ -1,0 +1,11 @@
+#aboutUs {
+  padding-top: 60px;
+  padding-bottom: 150px; }
+  #aboutUs .content {
+    padding-left: 75px;
+    padding-right: 32px;
+    text-align: left; }
+  #aboutUs-header {
+    border-bottom: 2px solid #f95556;
+    margin-right: 63px;
+    padding-bottom: 22px; }
