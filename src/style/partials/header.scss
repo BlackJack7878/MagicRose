@@ -70,12 +70,13 @@
 	}
 
 	&-langs {
-		margin-left: 50px;
+		margin-left: 40px;
 
 		.header-dropdown {
 			cursor: pointer;
 			padding-bottom: 34px;
-			padding-right: 20px;
+			padding-right: 60px;
+			padding-left: 10px;
 			position: relative;
 			color: $header_text_color;
 			font-size: 15px;
@@ -86,7 +87,7 @@
 				width: 25px;
 				height: 15px;
 				position: absolute;
-				right: -10px;
+				right: 30px;
 				top: 2px;
 			}
 
@@ -94,7 +95,7 @@
 				position: absolute;
 				content: " ";
 				top: 7px;
-				right: -30px;
+				right: 10px;
 				width: 0;
 				height: 0;
 				border-left: 8px solid transparent;
@@ -146,7 +147,7 @@
 	}
 
 	&-user {
-		margin-left: 51px;
+		margin-left: 11px;
 
 		&-login, &-register {
 			font-family: HelveticaNeueCyr-Bold;
