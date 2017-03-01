@@ -1,0 +1,117 @@
+#regist {
+	position: fixed;
+	padding: 43px 43px;
+	width: 454px;
+	height: 610px;
+	top: 20px;
+	left: 50%;
+	margin-left: -270px;
+	overflow-y: scroll;
+	background-color: white;
+	border: 1px dashed $color_darkgray;
+	display: none;
+	z-index: 12;
+
+	&-header {
+		font-family: HelveticaNeueCyr-Bold;
+		text-transform: uppercase;
+		color: $color_darkgray;
+		letter-spacing: 2px;
+		font-size: 30px;
+		border-bottom: 1px solid #f95556;
+		padding-bottom: 22px;
+		padding-top: 10px;
+		margin: 0;
+	}
+
+	&-form {
+		
+		label {
+			padding-top: 30px;
+			font-family: HelveticaNeueCyr-Bold;
+			text-transform: uppercase;
+			display: block;
+			letter-spacing: 2px;
+			font-size: 14px;
+			line-height: 35px;
+			color: $color_darkgray;
+		}
+
+		input {
+			width: 434px;
+			border: 1px dashed #d2d2d2;
+			padding: 10px 10px;
+			font-family: HelveticaNeueCyr-Roman;
+			outline: none;
+
+			&:focus, &:active {
+				border-color: $btn_hover;
+			}
+		}
+
+		.regist-form-group {
+			color: #d2d2d2;
+			font-family: HelveticaNeueCyr-Roman;
+			letter-spacing: 2px;
+			font-size: 20px;
+
+			.regist-input-wrapper {
+				display: inline-block;
+			}
+
+			.input-separator-hide {
+				visibility: hidden;
+			}
+
+			.regist-input-text {
+				font-size: 10px;
+				text-transform: uppercase;
+				padding-top: 5px;
+				padding-right: 15px;
+				display: block;
+				text-align: center;
+			}
+
+			.regist-input-small {
+				position: relative;
+				padding-left: 10px;
+				padding-right: 0;
+				width: 60px;
+			}
+
+			.regist-input-medium {
+				position: relative;
+				padding-left: 10px;
+				padding-right: 0;
+				width: 220px;
+			}
+		}
+
+		button {
+			margin-top: 40px;
+			padding: 14px 18px;
+			background-color: $btn_hover;
+			font-family: HelveticaNeueCyr-Roman;
+			font-size: 18px;
+			border-width: 0;
+			color: white;
+			cursor: pointer;
+			transition: all 0.3s ease;
+
+			&:hover, &:active, &:focus {
+				background-color: #29d176;
+			} 
+		}
+	}
+}
+
+#regist-overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.46);
+	cursor: pointer;
+	display: none;
+	z-index: 11;
+}

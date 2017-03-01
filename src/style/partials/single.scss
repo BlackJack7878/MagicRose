@@ -1,0 +1,103 @@
+#shop {
+
+	&-item {
+		float: left;
+		padding-left: 50px;
+		width: 764px;
+		text-align: left;
+		border-left: 1px solid #c8c8c8;
+
+		#clearfix {
+			overflow: hidden;
+		}
+
+		&-header {
+			display: block;
+			border-bottom: 2px solid #f95556;
+			font-family: HelveticaNeueCyr-Bold;
+			letter-spacing: 2px;
+			font-size: 30px;
+			color: $color_darkgray;
+			padding-bottom: 30px;
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		&-img {
+			margin-top: 50px;
+			margin-left: 10px;
+			float: left;
+		}
+
+		&-info {
+			margin-left: 100px;
+			margin-top: 50px;
+			float: left;
+		}
+
+		&-price {
+			font-size: 45px;
+			letter-spacing: 3px;
+			font-family: HelveticaNeueCyr-Roman;
+			color: $color_darkgray;
+
+			span {
+				font-family: HelveticaNeueCyr-Bold;
+				font-size: 16px;
+			}
+		}
+
+		&-btn {
+			color: white;
+			display: inline-block;
+			background-color: $btn_hover;
+			font-family: HelveticaNeueCyr-Roman;
+			font-size: 21px;
+			padding: 14px 46px;
+			margin-top: 16px;
+			margin-bottom: 4px;
+			transition: all 0.3s ease;
+			cursor: pointer;
+
+			&:hover, &:active, &:focus {
+				background-color: #29d176;
+			}
+		}
+
+		&-state {
+			margin-bottom: 60px;
+		}
+
+		.shop-item-text {
+			font-family: HelveticaNeueCyr-Light;
+			font-size: 16px;
+			line-height: 35px;
+			color: #aaaaaa;
+
+			&-bold {
+				display: inline-block;
+				font-family: HelveticaNeueCyr-Bold;
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				color: $color_darkgray;
+			}
+		}
+
+		&-desc-header {
+			font-family: HelveticaNeueCyr-Light;
+			font-size: 25px;
+			color: $color_darkgray;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			margin-top: 60px;
+		}
+
+		&-desc {
+			margin-top: 24px;
+			font-size: 15px;
+			line-height: 25px;
+		}
+	}
+	
+}

@@ -115,58 +115,78 @@
 	
 	<div id="regist-overlay"></div>
 
-<section id="aboutUs">
+<section id="shop">
 	<div class="content">
-		
-		<h1 id="aboutUs-header">О нас</h1>
 
-		<h2 class="aboutUs-info-header">Кто мы?</h2>
+		<aside id="shop-menu">
 
-		<div id="aboutUs-wrapper">
-			<img src="../img/about-us/flowers.jpg" alt="flowers">
-			<div class="aboutUs-text">Мы предоставляем широкий ассортимент продукции. У нас Вы всегда сможете найти розы отечественного производства различных сортов, а также такие импортные цветы, как: хризантемы, тюльпаны, герберы, пионы, гортензии, ирисы и альстромерии. 
-				<br>
-				В конце 2014 года мы начинаем выполнять доставку цветов на собственных брендированных автомобилях, увеличиваем штат персонала и подписываем договора на сотрудничество с различными компаниями.
-				<br>
-				Ежедневно в нашем интернет-магазине проходят акции на самые популярные букеты, которые приятно удивят Вас своими ценами.
-				<br>
-				Поставка цветов на наш склад существляется три раза в неделю, что обеспечивает свежесть и качество доставленных букетов и композиций. Доставка цветов BuketLand – всегда быстро, качественно, надежно. Магазин цветов BuketLand осуществляет доставку букетов по Киеву и Киевской области.</div>
+			<h2 class="shop-menu-header">Вазоны</h2>
+			<ul class="shop-menu-list">
+				<li class="shop-menu-list-item">из тюльпанов</li>
+				<li class="shop-menu-list-item">из хризантем</li>
+				<li class="shop-menu-list-item">из альстромерий</li>
+				<li class="shop-menu-list-item">из ирисов</li>
+				<li class="shop-menu-list-item">из пионов</li>
+				<li class="shop-menu-list-item">из гортензий</li>
+				<li class="shop-menu-list-item">из гербер</li>
+			</ul>
+
+			<h2 class="shop-menu-header">Букеты</h2>
+			<ul class="shop-menu-list">
+				<li class="shop-menu-list-item">из тюльпанов</li>
+				<li class="shop-menu-list-item">из хризантем</li>
+				<li class="shop-menu-list-item">из альстромерий</li>
+				<li class="shop-menu-list-item">из ирисов</li>
+				<li class="shop-menu-list-item">из пионов</li>
+				<li class="shop-menu-list-item">из гортензий</li>
+				<li class="shop-menu-list-item">из гербер</li>
+			</ul>
+
+			<form id="shop-form">
+				<p class="shop-form-header">Цена</p>
+				<div class="shop-form-wrapper">
+					<label class="shop-form-label">ОТ</label>
+					<input id="form-low-price" class="shop-form-price" type="number" min="0" max="10000"></input>
+				</div>
+				<div class="shop-form-wrapper">
+					<label class="shop-form-label">ДО</label>
+					<input id="form-high-price" class="shop-form-price" type="number" min="0" max="10000"></input>
+				</div>
+				<div class="shop-form-range"></div>
+				<button class="shop-form-btn">Фильтр</button>
+			</form>
+
+		</aside>
+
+		<section id="shop-item">
+			
+			<div id="clearfix">
+				<h1 id="shop-item-header">Букет роз</h1>
+
+				<img id="shop-item-img" src="../img/single/flowers.jpg" alt="flowers">
+
+				<div id="shop-item-info">
+					<div id="shop-item-price">2500 <span>грн</span></div>
+
+					<div id="shop-item-btn">Купить</div>
+					<div id="shop-item-state" class="shop-item-text">есть в наличии</div>
+
+					<div class="shop-item-text">
+						<div class="shop-item-text-bold">Высота:</div> 60 см
+					</div>
+					<div class="shop-item-text">
+						<div class="shop-item-text-bold">Состав букета:</div> розы-15шт., лента
+					</div>
+				</div>
 			</div>
 
-			<h2 class="aboutUs-info-header">Почему доставку цветов заказывают у нас?</h2>
+			<h2 id="shop-item-desc-header">Описание</h2>
 
-			<ul id="aboutUs-list">
-				<li class="aboutUs-list-item">
-					<span class="aboutUs-text">
-						Мы выполняем доставку только свежесрезанных цветов. Наши букеты отличаются высоким качеством и при правильном уходе радуют получателя больше недели.
-					</span>
-				</li>
-				<li class="aboutUs-list-item">
-					<span class="aboutUs-text">
-						Возможность индивидуального оформления букета (бумага, органза, сетка или любой другой материал).
-					</span>
-				</li>
-				<li class="aboutUs-list-item">
-					<span class="aboutUs-text">
-						Благодаря широкому ассортименту Вы можете выбрать букет из Ваших любимых цветов. В случае его отсутствия на сайте мы	выполним для Вас индивидуальный заказ.
-					</span>
-				</li>
-				<li class="aboutUs-list-item">
-					<span class="aboutUs-text">
-						Круглосуточная доставка цветов.
-					</span>
-				</li>
-				<li class="aboutUs-list-item">
-					<span class="aboutUs-text">
-						Доставка по Киеву бесплатная, в подарок к каждому букету идет фирменная открытка и фотоотчет.
-					</span>
-				</li>
-				<li class="aboutUs-list-item">
-					<span class="aboutUs-text">
-						Оплата букета возможна картой любого банка мира, независимо от Вашего местоположения. Букет красивых цветов актуален везде и всегда. Поэтому магазин цветов BuketLand прямо сейчас готов осуществить доставку букета, если Вам захотелось порадовать чем-то необыкновенным и запоминающимся дорогого Вам человека.
-					</span>
-				</li>
-			</ul>
+			<div id="shop-info-desc" class="shop-item-text">101 красно-белая роза уже который год пользуется большим спросом среди мужчин. Вы спросите почему? Как известно, белые розы принято дарить девушкам до 40, а красные – от 40 и выше. Микс же из 101 красно-белой розы отлично подойдет, как для молодой девушки, так и для дамы в возрасте. Прекрасное сочетание светлых белых и темных красных роз предает букету особую цветовую гамму и поразит даже любого мужчину. Также Вас может заинтересовать букет из 121 красно-белой розы. Он будет еще больше и ароматнее!
+				<br>
+				Элегантный букет из 101 розы сорта Talea. Такие розы выглядят богато и благородно в любых букетах и композициях благодаря своим крупным розовато-кремовым бутонам. Наши профессиональные флористы сумеют создать обворожительный букет из полу раскрывшихся бутонов роз Talea в гармоничном сочетании с декоративной зеленью насыщенных тонов. Создавая такие изумительные композиции, флористы используют только самые тонкие, очаровательные украшения, атласные ленты, невесомую упаковку по Вашему желанию.</div>
+
+			</section>
 
 		</div>
 	</section>

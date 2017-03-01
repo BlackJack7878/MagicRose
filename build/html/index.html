@@ -47,6 +47,74 @@
 		</div>
 	</header>
 
+	<section id="regist">
+		
+			<h2 id="regist-header">Регистрация</h2>
+	
+			<form id="regist-form">
+				<label>Имя</label>
+				<input type="text" required>
+				<label>Фамилия</label>
+				<input type="text" required>
+	
+				<div class="regist-form-group">
+					<label>Дата рождения</label>
+					<div class="regist-input-wrapper">
+						<input class="regist-input-small" type="number" required>
+						<span class="input-separator">/</span>
+						<span class="regist-input-text">Число</span>
+					</div>
+					<div class="regist-input-wrapper">
+						<input class="regist-input-small" type="number" required>
+						<span class="input-separator">/</span>
+						<span class="regist-input-text">Месяц</span>
+					</div>
+					<div class="regist-input-wrapper">
+						<input class="regist-input-small" type="number" required>
+						<span class="input-separator-hide">/</span>
+						<span class="regist-input-text">Год</span>
+					</div>
+				</div>
+	
+				<label>E-mail</label>
+				<input type="email" required>
+	
+				<label>Пароль</label>
+				<input type="password" required>
+				<label>Повторите пароль</label>
+				<input type="password" required>
+	
+				<label>Телефон</label>
+				<input type="tel" required>
+				<label>Повторите телефон</label>
+				<input type="tel" required>
+	
+				<div class="regist-form-group">
+					<label>Адрес</label>
+					<div class="regist-input-wrapper">
+						<input class="regist-input-medium" type="text">
+						<span class="input-separator">,</span>
+						<span class="regist-input-text">Улица</span>
+					</div>
+					<div class="regist-input-wrapper">
+						<input class="regist-input-small" type="text">
+						<span class="input-separator">,</span>
+						<span class="regist-input-text">Дом</span>
+					</div>
+					<div class="regist-input-wrapper">
+						<input class="regist-input-small" type="text">
+						<span class="input-separator-hide">,</span>
+						<span class="regist-input-text">Квартира</span>
+					</div>
+				</div>
+	
+				<button type="submit" form="regist-form">Зарегистрироваться</button>
+			</form>
+	
+	</section>
+	
+	<div id="regist-overlay"></div>
+
 <section id="shop">
 	<div class="content">
 
@@ -241,6 +309,10 @@
 					20.00
 				</span></li>
 			</ul>
+
+			<h4 id="footer-madeby">made by 
+				<span id="footer-madeby-bold">Brain & Spirit</span>
+			</h4>
 
 		</div>
 	</footer>

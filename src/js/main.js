@@ -2,3 +2,4 @@
 //= ../../bower_components/jquery-ui/jquery-ui.min.js
 
 //= partials/home.js
+//= partials/registration.js

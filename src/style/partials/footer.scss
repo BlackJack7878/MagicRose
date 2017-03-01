@@ -27,7 +27,7 @@
 		letter-spacing: 0.5px;
 		padding-left: 28px;
 		padding-right: 28px;
-		margin-bottom: 90px;
+		margin-bottom: 100px;
 
 		a {
 			color: $footer_text_color;
@@ -67,6 +67,17 @@
 
 		&:hover, &:active, &:focus {
 			background-image: url('../img/footer/fb-hover.png');
+		}
+	}
+
+	&-madeby {
+		font-family: HelveticaNeueCyr-Thin;
+		margin-top: 80px;
+		margin-right: 50px;
+		letter-spacing: 4px;
+
+		&-bold {
+			font-family: HelveticaNeueCyr-Bold;
 		}
 	}
 
