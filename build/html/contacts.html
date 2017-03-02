@@ -57,32 +57,32 @@
 			</div>
 		</header>
 
-		<section id="regist">
+		<section id="regist" class="user">
 			
-				<h2 id="regist-header">Регистрация</h2>
+				<h2 class="user-header">Регистрация</h2>
 		
-				<form id="regist-form">
+				<form id="regist-form" class="user-form">
 					<label>Имя</label>
 					<input type="text" required>
 					<label>Фамилия</label>
 					<input type="text" required>
 		
-					<div class="regist-form-group">
+					<div class="user-form-group">
 						<label>Дата рождения</label>
-						<div class="regist-input-wrapper">
-							<input class="regist-input-small" type="number" min="1" max="31" required>
+						<div class="user-input-wrapper">
+							<input class="user-input-small" type="number" min="1" max="31" required>
 							<span class="input-separator">/</span>
-							<span class="regist-input-text">Число</span>
+							<span class="user-input-text">Число</span>
 						</div>
-						<div class="regist-input-wrapper">
-							<input class="regist-input-small" type="number" min="1" max="12" required>
+						<div class="user-input-wrapper">
+							<input class="user-input-small" type="number" min="1" max="12" required>
 							<span class="input-separator">/</span>
-							<span class="regist-input-text">Месяц</span>
+							<span class="user-input-text">Месяц</span>
 						</div>
-						<div class="regist-input-wrapper">
-							<input class="regist-input-small" type="number" min="1900" required>
+						<div class="user-input-wrapper">
+							<input class="user-input-small" type="number" min="1900" required>
 							<span class="input-separator-hide">/</span>
-							<span class="regist-input-text">Год</span>
+							<span class="user-input-text">Год</span>
 						</div>
 					</div>
 		
@@ -99,22 +99,22 @@
 					<label>Повторите телефон</label>
 					<input type="tel" required>
 		
-					<div class="regist-form-group">
+					<div class="user-form-group">
 						<label>Адрес</label>
-						<div class="regist-input-wrapper">
-							<input class="regist-input-medium" type="text">
+						<div class="user-input-wrapper">
+							<input class="user-input-medium" type="text">
 							<span class="input-separator">,</span>
-							<span class="regist-input-text">Улица</span>
+							<span class="user-input-text">Улица</span>
 						</div>
-						<div class="regist-input-wrapper">
-							<input class="regist-input-small" type="text">
+						<div class="user-input-wrapper">
+							<input class="user-input-small" type="text">
 							<span class="input-separator">,</span>
-							<span class="regist-input-text">Дом</span>
+							<span class="user-input-text">Дом</span>
 						</div>
-						<div class="regist-input-wrapper">
-							<input class="regist-input-small" type="text">
+						<div class="user-input-wrapper">
+							<input class="user-input-small" type="text">
 							<span class="input-separator-hide">,</span>
-							<span class="regist-input-text">Квартира</span>
+							<span class="user-input-text">Квартира</span>
 						</div>
 					</div>
 		
@@ -123,7 +123,24 @@
 		
 		</section>
 		
-		<div id="regist-overlay"></div>
+		<div id="regist-overlay" class="user-overlay"></div>
+
+		<section id="login" class="user">
+			
+				<h2 class="user-header">Вход</h2>
+		
+				<form id="login-form" class="user-form">
+					<label>Логин</label>
+					<input type="text" required>
+					<label>Пароль</label>
+					<input type="password" required>
+		
+					<button type="submit" form="login-form">Войти</button>
+				</form>
+		
+		</section>
+		
+		<div id="login-overlay" class="user-overlay"></div>
 
 <section id="contacts">
 	<div class="content">
