@@ -148,6 +148,17 @@
 
 	&-user {
 		margin-left: 11px;
+		position: relative;
+		transform: translateY(12px);
+
+		ul {
+			height: 56px;
+
+			li {
+				height: 28px;
+				text-align: right;
+			}
+		}
 
 		&-login, &-register {
 			font-family: HelveticaNeueCyr-Bold;
@@ -165,6 +176,45 @@
 		&-login {
 			border-right: 2px solid $header_text_color;
 			padding-right: 5px;
+		}
+
+		&-basket {
+			text-align: right;
+			font-family: HelveticaNeueCyr-Light;
+			color: $color_darkgray;
+			letter-spacing: 3px;
+			font-size: 14px;
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			border-bottom: 1px solid $color_darkgray;
+			transition: all 0.3s ease;
+
+			&:hover, &:active, &:focus {
+				color: $btn_hover;
+				border-bottom-color: $btn_hover;
+			}
+
+			img {
+				position: absolute;
+				top: -4px;
+				left: -30px;
+			}
+
+			&-counter {
+				top: -6px;
+				left: -34px; 
+				position: absolute;
+				background-color: #5b8c5a;
+				color: white;
+				border-radius: 50%;
+				font-family: HelveticaNeueCyr-Bold;
+				font-size: 9px;
+				height: 16px;
+				width: 16px;
+				text-align: center;
+				line-height: 16px;
+			}
 		}
 	}
 }
