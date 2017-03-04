@@ -53,7 +53,8 @@ a {
   background-size: cover;
   background-position: center; }
   #header .content {
-    position: relative; }
+    position: relative;
+    height: 100%; }
   #header-menu, #header-contacts, #header-langs, #header-user,
   #header .header-menu-item, #header-user-login, #header-user-register {
     display: inline-block; }
@@ -69,6 +70,8 @@ a {
     background-color: white;
     padding: 19px 22px;
     box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.14); }
+    #header-logo img {
+      width: 130px; }
   #header-menu {
     margin-left: 216px; }
     #header-menu .header-menu-item {
@@ -201,10 +204,12 @@ a {
 #footer {
   background-image: url("../img/footer/bg.png");
   background-size: cover;
-  padding-bottom: 230px;
+  padding-bottom: 130px;
   padding-top: 160px;
   z-index: 10;
   position: relative; }
+  #footer-logo {
+    width: 140px; }
   #footer-middle-wrapper {
     padding-left: 122px;
     padding-right: 42px; }
@@ -218,7 +223,7 @@ a {
     letter-spacing: 0.5px;
     padding-left: 28px;
     padding-right: 28px;
-    margin-bottom: 100px; }
+    margin-bottom: 60px; }
     #footer .footer-menu-item a {
       color: #060808;
       transition: all 0.3s ease; }
@@ -243,7 +248,7 @@ a {
       background-image: url("../img/footer/fb-hover.png"); }
   #footer-madeby {
     font-family: HelveticaNeueCyr-Thin;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-right: 50px;
     letter-spacing: 4px; }
     #footer-madeby-bold {
@@ -251,7 +256,7 @@ a {
   #footer .footer-info-item {
     text-align: left;
     list-style: none;
-    line-height: 42px;
+    line-height: 36px;
     font-size: 15px;
     color: #060808;
     font-family: HelveticaNeueCyr-Light; }
@@ -618,7 +623,7 @@ a {
 
 .user {
   position: fixed;
-  padding: 43px 43px;
+  padding: 23px 43px 43px 43px;
   width: 454px;
   height: 610px;
   top: 20px;
@@ -629,16 +634,40 @@ a {
   border: 1px dashed #424242;
   display: none;
   z-index: 12; }
+  .user-exit {
+    text-align: right; }
+    .user-exit-btn {
+      width: 25px;
+      height: 25px;
+      position: relative;
+      right: -20px;
+      display: inline-block;
+      background-image: url("../img/userforms/cross.png");
+      cursor: pointer; }
+      .user-exit-btn:hover, .user-exit-btn:active, .user-exit-btn:focus {
+        background-image: url("../img/userforms/cross-hover.png"); }
   .user-header {
     font-family: HelveticaNeueCyr-Bold;
     text-transform: uppercase;
     color: #424242;
     letter-spacing: 2px;
     font-size: 30px;
-    border-bottom: 1px solid #f95556;
+    border-bottom: 2px solid #f95556;
     padding-bottom: 22px;
-    padding-top: 10px;
     margin: 0; }
+  .user-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 14px 18px;
+    background-color: #2fbf71;
+    font-family: HelveticaNeueCyr-Roman;
+    font-size: 18px;
+    border-width: 0;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; }
+    .user-btn:hover, .user-btn:active, .user-btn:focus {
+      background-color: #29d176; }
   .user-form label {
     padding-top: 30px;
     font-family: HelveticaNeueCyr-Bold;
@@ -649,7 +678,7 @@ a {
     line-height: 35px;
     color: #424242; }
   .user-form input {
-    width: 434px;
+    width: 416px;
     border: 1px dashed #d2d2d2;
     padding: 10px 10px;
     font-family: HelveticaNeueCyr-Roman;
@@ -682,18 +711,108 @@ a {
       padding-left: 10px;
       padding-right: 0;
       width: 220px; }
-  .user-form button {
-    margin-top: 40px;
-    padding: 14px 18px;
-    background-color: #2fbf71;
+  .user-list {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 2px solid #d2d2d2; }
+    .user-list .user-item {
+      display: inline-block;
+      height: 110px;
+      margin-bottom: 8px;
+      margin-top: 8px; }
+      .user-list .user-item-name, .user-list .user-item-price, .user-list .user-item-delete, .user-list .user-item-counter, .user-list .user-item-img {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        color: #424242;
+        text-align: center; }
+      .user-list .user-item-img {
+        background-color: #ececec;
+        padding-top: 4px;
+        padding-left: 18px;
+        padding-right: 18px; }
+        .user-list .user-item-img img {
+          width: 104px;
+          height: 104px; }
+      .user-list .user-item-name {
+        margin-left: 23px;
+        margin-right: 16px;
+        font-family: HelveticaNeueCyr-Bold;
+        letter-spacing: 2px;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 35px;
+        width: 166px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-decoration: underline; }
+      .user-list .user-item-counter-minus, .user-list .user-item-counter-plus {
+        float: left;
+        width: 33px;
+        height: 28px;
+        display: inline-block;
+        background-color: #2fbf71;
+        transition: all 0.3s ease;
+        cursor: pointer; }
+        .user-list .user-item-counter-minus:hover, .user-list .user-item-counter-minus:active, .user-list .user-item-counter-minus:focus, .user-list .user-item-counter-plus:hover, .user-list .user-item-counter-plus:active, .user-list .user-item-counter-plus:focus {
+          background-color: #29d176; }
+      .user-list .user-item-counter-minus {
+        background-image: url("../img/userforms/minus.png");
+        background-position: center;
+        background-repeat: no-repeat; }
+      .user-list .user-item-counter-plus {
+        background-image: url("../img/userforms/plus.png");
+        background-position: center;
+        background-repeat: no-repeat; }
+      .user-list .user-item-counter input {
+        float: left;
+        text-align: center;
+        width: 45px;
+        border: 1px dashed #2fbf71;
+        font-family: HelveticaNeueCyr-Light;
+        font-size: 18px;
+        line-height: 25px;
+        outline: none; }
+      .user-list .user-item-price {
+        font-family: HelveticaNeueCyr-Roman;
+        letter-spacing: 2px;
+        font-size: 25px;
+        margin-left: 26px; }
+        .user-list .user-item-price-lowercase {
+          font-family: HelveticaNeueCyr-Bold;
+          font-size: 16px; }
+      .user-list .user-item-delete {
+        width: 26px;
+        height: 26px;
+        margin-left: 38px;
+        border-radius: 50%;
+        background-color: #ff5351;
+        transition: all 0.3s ease;
+        background-image: url("../img/userforms/cross-little.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer; }
+        .user-list .user-item-delete:hover, .user-list .user-item-delete:active, .user-list .user-item-delete:focus {
+          background-color: #ff302e; }
+  .user-total {
+    float: left;
+    margin-top: 46px;
+    display: inline-block;
     font-family: HelveticaNeueCyr-Roman;
-    font-size: 18px;
-    border-width: 0;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease; }
-    .user-form button:hover, .user-form button:active, .user-form button:focus {
-      background-color: #29d176; }
+    font-size: 15px;
+    color: #d2d2d2;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+    text-transform: uppercase; }
+    .user-total-price {
+      display: inline-block;
+      font-size: 22px;
+      color: #424242; }
+      .user-total-price-lowercase {
+        font-size: 15px;
+        text-transform: none; }
+  .user-btn-right {
+    float: right; }
 
 .user-overlay {
   width: 100%;
@@ -704,3 +823,32 @@ a {
   cursor: pointer;
   display: none;
   z-index: 11; }
+
+#login {
+  top: 140px;
+  overflow-y: hidden;
+  height: 360px; }
+  #login input {
+    width: 434px; }
+
+#basket {
+  width: 680px;
+  height: auto;
+  max-height: 610px;
+  margin-left: -340px; }
+
+.header-short {
+  background-image: none !important;
+  height: 80px !important; }
+  .header-short .content {
+    padding-top: 5px; }
+  .header-short #header-logo {
+    top: -5px; }
+  .header-short #header-menu {
+    margin-left: 220px;
+    height: 80px; }
+    .header-short #header-menu .header-menu-item {
+      margin-left: 20px;
+      margin-right: 20px; }
+  .header-short #header-langs {
+    margin-left: 150px; }

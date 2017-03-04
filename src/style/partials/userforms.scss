@@ -1,6 +1,6 @@
 .user {
 	position: fixed;
-	padding: 43px 43px;
+	padding: 23px 43px 43px 43px;
 	width: 454px;
 	height: 610px;
 	top: 20px;
@@ -12,16 +12,50 @@
 	display: none;
 	z-index: 12;
 
+	&-exit {
+		text-align: right;
+		
+		&-btn {
+			width: 25px;
+			height: 25px;
+			position: relative;
+			right: -20px;
+			display: inline-block;
+			background-image: url('../img/userforms/cross.png');
+			cursor: pointer;
+
+			&:hover, &:active, &:focus {
+				background-image: url('../img/userforms/cross-hover.png');
+			}
+		}
+	}
+
 	&-header {
 		font-family: HelveticaNeueCyr-Bold;
 		text-transform: uppercase;
 		color: $color_darkgray;
 		letter-spacing: 2px;
 		font-size: 30px;
-		border-bottom: 1px solid #f95556;
+		border-bottom: 2px solid #f95556;
 		padding-bottom: 22px;
-		padding-top: 10px;
 		margin: 0;
+	}
+
+	&-btn {
+		display: inline-block;
+		margin-top: 40px;
+		padding: 14px 18px;
+		background-color: $btn_hover;
+		font-family: HelveticaNeueCyr-Roman;
+		font-size: 18px;
+		border-width: 0;
+		color: white;
+		cursor: pointer;
+		transition: all 0.3s ease;
+
+		&:hover, &:active, &:focus {
+			background-color: #29d176;
+		} 
 	}
 
 	&-form {
@@ -38,7 +72,7 @@
 		}
 
 		input {
-			width: 434px;
+			width: 416px;
 			border: 1px dashed #d2d2d2;
 			padding: 10px 10px;
 			font-family: HelveticaNeueCyr-Roman;
@@ -86,23 +120,153 @@
 				width: 220px;
 			}
 		}
+	}
 
-		button {
-			margin-top: 40px;
-			padding: 14px 18px;
-			background-color: $btn_hover;
-			font-family: HelveticaNeueCyr-Roman;
-			font-size: 18px;
-			border-width: 0;
-			color: white;
-			cursor: pointer;
-			transition: all 0.3s ease;
+	// basket
+	&-list {
+		padding-bottom: 25px;
+		padding-top: 25px;
+		border-bottom: 2px solid #d2d2d2;
 
-			&:hover, &:active, &:focus {
-				background-color: #29d176;
-			} 
+		.user-item {
+			display: inline-block;
+			height: 110px;
+			margin-bottom: 8px;
+			margin-top: 8px;
+
+			&-name, &-price, &-delete, &-counter, &-img {
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+				color: $color_darkgray;
+				text-align: center;
+			}
+
+			&-img {
+				background-color: #ececec;
+				padding-top: 4px;
+				padding-left: 18px;
+				padding-right: 18px;
+
+				img {
+					width: 104px;
+					height: 104px;
+				}
+			}
+
+			&-name {
+				margin-left: 23px;
+				margin-right: 16px;
+				font-family: HelveticaNeueCyr-Bold;
+				letter-spacing: 2px;
+				font-size: 16px;
+				text-transform: uppercase;
+				line-height: 35px;
+				width: 166px;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				text-decoration: underline;
+			}
+
+			&-counter {
+
+				&-minus, &-plus {
+					float: left;
+					width: 33px;
+					height: 28px;
+					display: inline-block;
+					background-color: $btn_hover;
+					transition: all 0.3s ease;
+					cursor: pointer;
+
+					&:hover, &:active, &:focus {
+						background-color: #29d176;
+					} 
+				}
+
+				&-minus {
+					background-image: url('../img/userforms/minus.png');
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+				&-plus {
+					background-image: url('../img/userforms/plus.png');
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+				input {
+					float: left;
+					text-align: center;
+					width: 45px;
+					border: 1px dashed $btn_hover;
+					font-family: HelveticaNeueCyr-Light;
+					font-size: 18px;
+					line-height: 25px;
+					outline: none;
+				}
+			}
+
+			&-price {
+				font-family: HelveticaNeueCyr-Roman;
+				letter-spacing: 2px;
+				font-size: 25px;
+				margin-left: 26px;
+
+				&-lowercase {
+					font-family: HelveticaNeueCyr-Bold;
+					font-size: 16px;
+				}
+			}
+
+			&-delete {
+				width: 26px;
+				height: 26px;
+				margin-left: 38px;
+				border-radius: 50%;
+				background-color: #ff5351;
+				transition: all 0.3s ease;
+				background-image: url('../img/userforms/cross-little.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				cursor: pointer;	
+
+				&:hover, &:active, &:focus {
+					background-color: #ff302e;
+				}
+			}
+
 		}
 	}
+
+	&-total {
+		float: left;
+		margin-top: 46px;
+		display: inline-block;
+		font-family: HelveticaNeueCyr-Roman;
+		font-size: 15px;
+		color: #d2d2d2;
+		letter-spacing: 1.5px;
+		line-height: 35px;
+		text-transform: uppercase;
+
+		&-price {
+			display: inline-block;
+			font-size: 22px;
+			color: $color_darkgray;
+
+			&-lowercase {
+				font-size: 15px;
+				text-transform: none;
+			}
+		}
+	}
+
+	&-btn-right {
+		float: right;
+	}
+
 }
 
 .user-overlay {
@@ -120,4 +284,15 @@
 	top: 140px;
 	overflow-y: hidden;
 	height: 360px;
+
+	input {
+		width: 434px;
+	}
+}
+
+#basket {
+	width: 680px;
+	height: auto;
+	max-height: 610px;
+	margin-left: -340px;
 }

@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$('#regist, #regist-overlay').fadeIn();
 	});
 
-	$('#regist-overlay').click(function(event) {
+	$('#regist-overlay, .user-exit-btn').click(function(event) {
 		$('#regist-overlay, #regist').fadeOut();
 	});
 

@@ -4,3 +4,4 @@
 //= partials/home.js
 //= partials/registration.js
 //= partials/login.js
+//= partials/basket.js

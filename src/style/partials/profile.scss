@@ -1,0 +1,58 @@
+.profile {
+	padding-bottom: 110px;
+
+	&-header {
+		margin-top: 66px;
+		margin-left: 250px;
+		margin-right: 358px;
+		padding-bottom: 22px;
+		text-transform: uppercase;
+		text-align: left;
+		border-bottom: 2px solid #f95556;
+	}
+
+	&-form {
+		padding-left: 250px;
+		text-align: left;
+
+		label {
+			display: block;
+			font-family: HelveticaNeueCyr-Bold;
+			text-transform: uppercase;
+			color: $color_darkgray;
+			letter-spacing: 2px;
+			font-size: 14px;
+			line-height: 35px;
+			margin-top: 30px;
+		}
+
+		input {
+			width: 450px;
+			border: 1px dashed #d2d2d2;
+			padding: 10px 10px;
+			font-family: HelveticaNeueCyr-Roman;
+			outline: none;
+
+			&:focus, &:active {
+				border-color: $btn_hover;
+			}
+		}
+
+		&-btn {
+			display: inline-block;
+			margin-top: 40px;
+			padding: 14px 18px;
+			background-color: $btn_hover;
+			font-family: HelveticaNeueCyr-Roman;
+			font-size: 18px;
+			border-width: 0;
+			color: white;
+			cursor: pointer;
+			transition: all 0.3s ease;
+
+			&:hover, &:active, &:focus {
+				background-color: #29d176;
+			} 
+		}
+	}
+}

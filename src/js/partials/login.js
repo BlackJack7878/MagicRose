@@ -4,7 +4,7 @@ $(document).ready(function() {
 		$('#login, #login-overlay').fadeIn();
 	});
 
-	$('#login-overlay').click(function(event) {
+	$('#login-overlay, .user-exit-btn').click(function(event) {
 		$('#login-overlay, #login').fadeOut();
 	});
 

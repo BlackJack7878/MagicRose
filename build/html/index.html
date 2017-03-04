@@ -58,6 +58,10 @@
 		</header>
 
 		<section id="regist" class="user">
+		
+				<div class="user-exit">
+					<div class="user-exit-btn"></div>
+				</div>
 			
 				<h2 class="user-header">Регистрация</h2>
 		
@@ -118,7 +122,7 @@
 						</div>
 					</div>
 		
-					<button type="submit" form="regist-form">Зарегистрироваться</button>
+					<button class="user-btn" type="submit" form="regist-form">Зарегистрироваться</button>
 				</form>
 		
 		</section>
@@ -126,6 +130,10 @@
 		<div id="regist-overlay" class="user-overlay"></div>
 
 		<section id="login" class="user">
+		
+				<div class="user-exit">
+					<div class="user-exit-btn"></div>
+				</div>
 			
 				<h2 class="user-header">Вход</h2>
 		
@@ -135,12 +143,68 @@
 					<label>Пароль</label>
 					<input type="password" required>
 		
-					<button type="submit" form="login-form">Войти</button>
+					<button class="user-btn" type="submit" form="login-form">Войти</button>
 				</form>
 		
 		</section>
 		
 		<div id="login-overlay" class="user-overlay"></div>
+
+		<section id="basket" class="user">
+			
+			<div class="user-exit">
+				<div class="user-exit-btn"></div>
+			</div>
+		
+			<h2 class="user-header">Корзина</h2>
+		
+			<ul class="user-list">
+				<li class="user-item">
+					<div class="user-item-wrapper">
+						<div class="user-item-img">
+							<img src="../img/userforms/flowers.png" alt="flowers">
+						</div>
+						<div class="user-item-name">Букет роз</div>
+		
+						<div class="user-item-counter">
+							<span class="user-item-counter-minus"></span>
+							<input type="text" value="1">
+							<span class="user-item-counter-plus"></span>
+						</div>
+		
+						<div class="user-item-price">2500<span class="user-item-price-lowercase">грн</span></div>
+						<div class="user-item-delete"></div>
+					</div>
+				</li>
+		
+				<li class="user-item">
+					<div class="user-item-wrapper">
+						<div class="user-item-img">
+							<img src="../img/userforms/flowers.png" alt="flowers">
+						</div>
+						<div class="user-item-name">Букет роз</div>
+		
+						<div class="user-item-counter">
+							<span class="user-item-counter-minus"></span>
+							<input type="text" value="1">
+							<span class="user-item-counter-plus"></span>
+						</div>
+		
+						<div class="user-item-price">2500<span class="user-item-price-lowercase">грн</span></div>
+						<div class="user-item-delete"></div>
+					</div>
+				</li>
+			</ul>
+		
+			<div class="user-total">Стоимость заказа: 
+				<div class="user-total-price">5000<span class="user-total-price-lowercase">грн</span></div>
+			</div>
+		
+			<div class="user-btn-right user-btn">Оформить заказ</div>
+		
+		</section>
+		
+		<div id="basket-overlay" class="user-overlay"></div>
 
 <section id="shop">
 	<div class="content">

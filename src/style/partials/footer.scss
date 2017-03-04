@@ -1,10 +1,14 @@
 #footer {
 	background-image: url('../img/footer/bg.png');
 	background-size: cover;
-	padding-bottom: 230px;
+	padding-bottom: 130px;
 	padding-top: 160px;
 	z-index: 10;
 	position: relative;
+
+	&-logo {
+		width: 140px;
+	}
 
 	&-middle-wrapper {
 		padding-left: 122px;
@@ -27,7 +31,7 @@
 		letter-spacing: 0.5px;
 		padding-left: 28px;
 		padding-right: 28px;
-		margin-bottom: 100px;
+		margin-bottom: 60px;
 
 		a {
 			color: $footer_text_color;
@@ -72,7 +76,7 @@
 
 	&-madeby {
 		font-family: HelveticaNeueCyr-Thin;
-		margin-top: 80px;
+		margin-top: 70px;
 		margin-right: 50px;
 		letter-spacing: 4px;
 
@@ -84,7 +88,7 @@
 	.footer-info-item {
 		text-align: left;
 		list-style: none;
-		line-height: 42px;
+		line-height: 36px;
 		font-size: 15px;
 		color: $footer_text_color;
 		font-family: HelveticaNeueCyr-Light;

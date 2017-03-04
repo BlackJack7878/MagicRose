@@ -1,0 +1,26 @@
+.header-short {
+	background-image: none !important;
+	height: 80px !important;
+
+	.content {
+		padding-top: 5px;
+	}
+
+	#header-logo {
+		top: -5px;
+	}
+
+	#header-menu {
+		margin-left: 220px;
+		height: 80px;
+
+		.header-menu-item {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+
+	#header-langs {
+		margin-left: 150px;
+	}
+}
