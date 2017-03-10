@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<header id="header">
+	<header id="header" class="header-short">
 		<div id="header-wrapper">
 			<div class="content">
 
@@ -18,14 +18,8 @@
 				</div>
 
 				<ul id="header-menu">
-					<li class="header-menu-item"><a href="#">Про нас</a></li>
-					<li class="header-menu-item"><a href="#">Товары</a></li>
-					<li class="header-menu-item"><a href="#">Контакты</a></li>
-				</ul>
-
-				<ul id="header-contacts">
-					<li class="header-contacts-item">+38 (050) <span class="header-contacts-item-bold">372 44 22</span></li>
-					<li class="header-contacts-item">+38 (050) <span class="header-contacts-item-bold">372 44 22</span></li>
+					<li class="header-menu-item"><a href="#">Личная информация</a></li>
+					<li class="header-menu-item"><a href="#">Архив</a></li>
 				</ul>
 
 				<ul id="header-langs">
@@ -206,176 +200,82 @@
 		
 		<div id="basket-overlay" class="user-overlay"></div>
 
-<section id="shop">
+<section class="archive">
 	<div class="content">
+		
+		<h1 class="archive-header">Архив</h1>
 
-		<aside id="shop-menu">
+		<ul class="archive-list">
+			<li class="archive-item">
+				<div class="archive-item-wrapper">
+					<div class="archive-item-img">
+						<img src="../img/archive/flowers.png" alt="flowers">
+					</div>
+					<div class="archive-item-name">Букет роз</div>
 
-			<h2 class="shop-menu-header">Вазоны</h2>
-			<ul class="shop-menu-list">
-				<li class="shop-menu-list-item">из тюльпанов</li>
-				<li class="shop-menu-list-item">из хризантем</li>
-				<li class="shop-menu-list-item">из альстромерий</li>
-				<li class="shop-menu-list-item">из ирисов</li>
-				<li class="shop-menu-list-item">из пионов</li>
-				<li class="shop-menu-list-item">из гортензий</li>
-				<li class="shop-menu-list-item">из гербер</li>
-			</ul>
+					<div class="archive-item-count">5</div>
 
-			<h2 class="shop-menu-header">Букеты</h2>
-			<ul class="shop-menu-list">
-				<li class="shop-menu-list-item">из тюльпанов</li>
-				<li class="shop-menu-list-item">из хризантем</li>
-				<li class="shop-menu-list-item">из альстромерий</li>
-				<li class="shop-menu-list-item">из ирисов</li>
-				<li class="shop-menu-list-item">из пионов</li>
-				<li class="shop-menu-list-item">из гортензий</li>
-				<li class="shop-menu-list-item">из гербер</li>
-			</ul>
+					<div class="archive-item-price">2500<span class="archive-item-price-lowercase">грн</span></div>
 
-			<form id="shop-form">
-				<p class="shop-form-header">Цена</p>
-				<div class="shop-form-wrapper">
-					<label class="shop-form-label">ОТ</label>
-					<input id="form-low-price" class="shop-form-price" type="number" min="0" max="10000"></input>
+					<div class="archive-item-address">ул. Пасечная 25а</div>
+
+					<div class="archive-item-state done">доставлен</div>
 				</div>
-				<div class="shop-form-wrapper">
-					<label class="shop-form-label">ДО</label>
-					<input id="form-high-price" class="shop-form-price" type="number" min="0" max="10000"></input>
+			</li>
+
+			<li class="archive-item">
+				<div class="archive-item-wrapper">
+					<div class="archive-item-img">
+						<img src="../img/archive/flowers.png" alt="flowers">
+					</div>
+					<div class="archive-item-name">Букет роз</div>
+
+					<div class="archive-item-count">3</div>
+
+					<div class="archive-item-price">2500<span class="archive-item-price-lowercase">грн</span></div>
+
+					<div class="archive-item-address">ул. Пасечная 25а</div>
+
+					<div class="archive-item-state done">доставлен</div>
 				</div>
-				<div class="shop-form-range"></div>
-				<button class="shop-form-btn">Фильтр</button>
-			</form>
+			</li>
 
-		</aside>
-
-		<section id="shop-goods">
-			
-			<h1 id="shop-goods-header">Букеты</h1>
-
-			<ul id="shop-goods-list">
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-1.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
+			<li class="archive-item">
+				<div class="archive-item-wrapper">
+					<div class="archive-item-img">
+						<img src="../img/archive/flowers.png" alt="flowers">
 					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
+					<div class="archive-item-name">Букет роз</div>
 
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-2.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
+					<div class="archive-item-count">1</div>
+
+					<div class="archive-item-price">2500<span class="archive-item-price-lowercase">грн</span></div>
+
+					<div class="archive-item-address">ул. Пасечная 25а</div>
+
+					<div class="archive-item-state progress">
+						<div class="archive-item-state-line"></div>
 					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
+				</div>
+			</li>
 
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-3.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
+			<li class="archive-item">
+				<div class="archive-item-wrapper">
+					<div class="archive-item-img">
+						<img src="../img/archive/flowers.png" alt="flowers">
 					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
+					<div class="archive-item-name">Букет роз</div>
 
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-4.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Талея 201 роза</div>
-					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
+					<div class="archive-item-count">1</div>
 
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-5.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
-					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
+					<div class="archive-item-price">2500<span class="archive-item-price-lowercase">грн</span></div>
 
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-6.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
-					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
+					<div class="archive-item-address">ул. Пасечная 25а</div>
 
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-1.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
-					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
-
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-2.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
-					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
-
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-3.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
-					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
-
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-4.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Талея 101 роза</div>
-					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
-
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-5.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
-					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
-
-				<li class="shop-goods-item">
-					<img src="../img/home/flowers-6.jpg" alt="flowers">
-					<div class="shop-goods-item-nameWrapper">
-						<div class="shop-goods-item-name">Букет роз</div>
-					</div>
-					<div class="shop-goods-item-price">2500грн</div>
-					<a href="#"><div class="shop-goods-item-btn">Купить</div></a>
-					<div class="shop-goods-item-state">Есть в наличии</div>
-				</li>
-			</ul>
-
-		</section>
+					<div class="archive-item-state done">доставлен</div>
+				</div>
+			</li>
+		</ul>
 
 	</div>
 </section>

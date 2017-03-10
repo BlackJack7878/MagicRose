@@ -852,3 +852,91 @@ a {
       margin-right: 20px; }
   .header-short #header-langs {
     margin-left: 150px; }
+
+.profile {
+  padding-bottom: 110px; }
+  .profile-header {
+    margin-top: 66px;
+    margin-left: 250px;
+    margin-right: 358px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 2px solid #f95556; }
+  .profile-form {
+    padding-left: 250px;
+    text-align: left; }
+    .profile-form label {
+      display: block;
+      font-family: HelveticaNeueCyr-Bold;
+      text-transform: uppercase;
+      color: #424242;
+      letter-spacing: 2px;
+      font-size: 14px;
+      line-height: 35px;
+      margin-top: 30px; }
+    .profile-form input {
+      width: 450px;
+      border: 1px dashed #d2d2d2;
+      padding: 10px 10px;
+      font-family: HelveticaNeueCyr-Roman;
+      outline: none; }
+      .profile-form input:focus, .profile-form input:active {
+        border-color: #2fbf71; }
+    .profile-form-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 18px;
+      background-color: #2fbf71;
+      font-family: HelveticaNeueCyr-Roman;
+      font-size: 18px;
+      border-width: 0;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      .profile-form-btn:hover, .profile-form-btn:active, .profile-form-btn:focus {
+        background-color: #29d176; }
+
+.profile {
+  padding-bottom: 110px; }
+  .profile-header {
+    margin-top: 66px;
+    margin-left: 250px;
+    margin-right: 358px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 2px solid #f95556; }
+  .profile-form {
+    padding-left: 250px;
+    text-align: left; }
+    .profile-form label {
+      display: block;
+      font-family: HelveticaNeueCyr-Bold;
+      text-transform: uppercase;
+      color: #424242;
+      letter-spacing: 2px;
+      font-size: 14px;
+      line-height: 35px;
+      margin-top: 30px; }
+    .profile-form input {
+      width: 450px;
+      border: 1px dashed #d2d2d2;
+      padding: 10px 10px;
+      font-family: HelveticaNeueCyr-Roman;
+      outline: none; }
+      .profile-form input:focus, .profile-form input:active {
+        border-color: #2fbf71; }
+    .profile-form-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 18px;
+      background-color: #2fbf71;
+      font-family: HelveticaNeueCyr-Roman;
+      font-size: 18px;
+      border-width: 0;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      .profile-form-btn:hover, .profile-form-btn:active, .profile-form-btn:focus {
+        background-color: #29d176; }

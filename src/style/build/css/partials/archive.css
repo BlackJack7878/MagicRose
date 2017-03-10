@@ -1,0 +1,31 @@
+.archive {
+  padding-bottom: 110px; }
+  .archive-header {
+    margin-top: 66px;
+    margin-left: 250px;
+    margin-right: 358px;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 2px solid #f95556; }
+  .archive-item {
+    display: inline-block;
+    height: 110px; }
+    .archive-item-name, .archive-item-img, .archive-item-count, .archive-item-price, .archive-item-address, .archive-item-state {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center; }
+    .archive-item-img {
+      background-color: #ececec; }
+      .archive-item-img img {
+        width: 104px;
+        height: 104px; }
+    .archive-item-name {
+      font-family: HelveticaNeueCyr-Bold;
+      letter-spacing: 2px;
+      font-size: 16px;
+      text-transform: uppercase;
+      width: 195px;
+      text-overflow: ellipsis;
+      line-height: 35px;
+      text-decoration: underline; }
