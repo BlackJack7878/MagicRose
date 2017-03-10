@@ -113,3 +113,21 @@
 	}
 	
 }
+
+@media (min-height: 1500px) {
+  .archive {
+  	padding-bottom: 800px;
+  }
+}
+
+@media (max-width: 550px) {
+  .archive {
+  	padding-bottom: 800px;
+  }
+}
+
+@media (max-width: 375px) {
+  .archive {
+  	padding-bottom: 1400px;
+  }
+}
