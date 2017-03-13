@@ -6,10 +6,8 @@
   .header-short #header-logo {
     top: -5px; }
   .header-short #header-menu {
-    margin-left: 226px;
+    margin-right: 230px;
     height: 80px; }
     .header-short #header-menu .header-menu-item {
       margin-left: 20px;
       margin-right: 20px; }
-  .header-short #header-langs {
-    margin-left: 280px; }
