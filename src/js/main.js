@@ -5,3 +5,4 @@
 //= partials/registration.js
 //= partials/login.js
 //= partials/basket.js
+//= partials/buy.js

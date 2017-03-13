@@ -41,20 +41,40 @@
 		margin: 0;
 	}
 
+	&-btn-reverse {
+		display: inline-block;
+		margin-top: 40px;
+		padding: 12px 18px;
+		border: 2px dashed $btn_hover;
+		font-family: HelveticaNeueCyr-Roman;
+		font-size: 18px;
+		background-color: white;
+		color: $color_darkgray;
+		cursor: pointer;
+		transition: all 0.3s ease;
+
+		&:hover, &:active, &:focus {
+			color: white;
+			background-color: $btn_hover;
+		} 
+	}
+
 	&-btn {
 		display: inline-block;
 		margin-top: 40px;
-		padding: 14px 18px;
+		padding: 12px 18px;
 		background-color: $btn_hover;
 		font-family: HelveticaNeueCyr-Roman;
 		font-size: 18px;
-		border-width: 0;
+		border-style: none;
+		border: 2px solid $btn_hover;
 		color: white;
 		cursor: pointer;
 		transition: all 0.3s ease;
 
 		&:hover, &:active, &:focus {
 			background-color: #29d176;
+			border-color: #29d176;
 		} 
 	}
 
@@ -69,6 +89,20 @@
 			font-size: 14px;
 			line-height: 35px;
 			color: $color_darkgray;
+		}
+
+		textarea {
+			width: 416px;
+			height: 120px;
+			border: 1px dashed #d2d2d2;
+			padding: 10px 10px;
+			font-family: HelveticaNeueCyr-Roman;
+			outline: none;
+			line-height: 18px;
+
+			&:focus, &:active {
+				border-color: $btn_hover;
+			}
 		}
 
 		input {
@@ -296,4 +330,28 @@
 	height: auto;
 	max-height: 610px;
 	margin-left: -340px;
+}
+
+#buy {
+	display: block;
+
+	.user {
+
+		&-btn, &-btn-reverse {
+			padding-left: 28px;
+			padding-right: 28px;
+		}
+
+		&-input-text {
+			text-align: left;
+			line-height: 15px;
+			text-transform: none;
+			font-size: 12px;
+			letter-spacing: 1.3px;
+		}
+	}
+}
+
+#buy-overlay {
+	display: block;
 }

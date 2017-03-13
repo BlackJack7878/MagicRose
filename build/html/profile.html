@@ -194,11 +194,51 @@
 				<div class="user-total-price">5000<span class="user-total-price-lowercase">грн</span></div>
 			</div>
 		
-			<div class="user-btn-right user-btn">Оформить заказ</div>
+			<div id="user-basket-btn" class="user-btn-right user-btn">Оформить заказ</div>
 		
 		</section>
 		
 		<div id="basket-overlay" class="user-overlay"></div>
+
+		<section id="buy" class="user">
+		
+			<div class="user-exit">
+				<div class="user-exit-btn"></div>
+			</div>
+			
+			<h2 class="user-header">Ваш заказ</h2>
+		
+			<form id="buy-form" class="user-form">
+		
+				<label>Имя</label>
+				<input type="text" required>
+				<label>Фамилия</label>
+				<input type="text" required>
+		
+				<div class="user-form-group">
+					<label>Номер телефона</label>
+					<div class="user-input-wrapper">
+						<input type="tel" required>
+						<span class="user-input-text">Наш співробітник сконтактується з вами для підтвердження замовлення</span>
+					</div>
+				</div>
+		
+				<label>Адрес доставки</label>
+				<input type="text" required>
+				<label>Email</label>
+				<input type="email" required>
+		
+				<label>Дополнительная информация</label>
+				<textarea></textarea>
+		
+				<button class="user-btn-reverse" type="submit" form="buy-form">Назад в корзину</button>
+		
+				<button class="user-btn user-btn-right" type="submit" form="buy-form">Перейти к оплате</button>
+			</form>
+		
+		</section>
+		
+		<div id="buy-overlay" class="user-overlay"></div>
 
 <section class="profile">
 	<div class="content">
