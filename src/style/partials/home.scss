@@ -1,5 +1,32 @@
+.arrow-wrapper {
+	position: relative;
+	top: -160px;
+	height: 0;
+}
+
+.arrow {
+	display: inline-block;
+	margin: auto;
+	background-color: rgba(255, 82, 82, 0.6);
+	padding: 20px 26px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+	&-text {
+		color: white;
+		font-family: HelveticaNeueCyr-Light;
+		font-size: 15px;
+		letter-spacing: 1px;
+		margin-top: 0;
+	}
+
+	&:hover, &:active, &:focus {
+		background-color: rgba(255, 82, 82, 0.8);
+	}
+}
+
 #shop {
-	padding-bottom: 165px;
+	padding-bottom: 90px;
 	margin-top: 100px;
 
 	.content {
@@ -249,4 +276,39 @@
 			}
 		}
 	}
+}
+
+.pagination {
+	padding-top: 76px;
+	padding-left: 310px;
+
+	&-item, &-item-active {
+		display: inline-block;
+		font-family: HelveticaNeueCyr-Bold;
+		font-size: 18px;
+		line-height: 25px;
+		transition: all 0.3s ease;
+		border: 1px dashed transparent;
+
+		a {
+			color: $color_darkgray;
+			padding-left: 5px;
+			padding-right: 5px;
+			transition: all 0.3s ease;
+		}
+
+		&:hover, &:focus, &:active {
+			background-color: $btn_hover;
+
+			a {
+				color: white;
+			}
+		}
+
+	}
+
+	&-item-active {
+		border: 1px dashed $btn_hover;
+	}
+
 }

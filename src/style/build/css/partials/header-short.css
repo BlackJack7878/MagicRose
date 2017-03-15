@@ -1,13 +1,13 @@
 .header-short {
   background-image: none !important;
   height: 80px !important; }
-  .header-short .content {
-    padding-top: 5px; }
-  .header-short #header-logo {
-    top: -5px; }
   .header-short #header-menu {
-    margin-right: 230px;
-    height: 80px; }
+    margin-right: 190px;
+    height: 80px;
+    padding-top: 32px; }
     .header-short #header-menu .header-menu-item {
+      height: 20px;
       margin-left: 20px;
       margin-right: 20px; }
+  .header-short #header-user {
+    transform: translateY(2px); }
